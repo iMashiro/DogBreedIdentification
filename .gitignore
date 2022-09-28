@@ -1,3 +1,4 @@
 /env
 /src.egg-info
 /__pycache__
+/src/data/processed_data.pkl
