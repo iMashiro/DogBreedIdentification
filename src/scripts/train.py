@@ -37,7 +37,7 @@ class Train():
         epochs = 10
         latent_dim = 32
 
-        train_dataset = Dataset(train.train_dataset)
+        train_dataset = Dataset(train.train_dataset.sample(2000))
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4)
 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
